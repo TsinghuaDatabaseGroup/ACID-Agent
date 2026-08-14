@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kramabench"
+version = "1.0.0.dev0"
+description = "KramaBench: A benchmark suite for evaluating AI systems on complex reasoning tasks over data"
+authors = [
+  { name="KramaBench Contributors" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.2.3",
+  "numpy>=2.0",
+  "huggingface-hub>=0.29.0",
+  "requests>=2.32.0",
+  "rich>=13.9.0",
+  "python-dotenv>=1.0.0",
+  "pillow>=10.0.0",
+  "jinja2>=3.1.0",
+  "pyyaml>=6.0",
+  "typeguard>=4.0.0",
+  "rouge-score>=0.1.0",
+  "beautifulsoup4>=4.12.0",
+  "wikipedia-api>=0.6.0",
+  "youtube-transcript-api>=0.6.0",
+  "openai==1.72.0",
+]
+
+[project.optional-dependencies]
+baselines = [
+  "litellm>=1.0.0",
+  "anthropic>=0.7.0",
+  "ollama>=0.4.0",
+  "together>=1.0.0",
+  "PyPDF2>=3.0.0",
+]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.1.0",
+]
+all = [
+  "kramabench[baselines,dev]",
+]
+
+[tool.pytest.ini_options]
+addopts = "-sv --durations=0"
+
+[tool.ruff]
+line-length = 119
+lint.ignore = [
+  "F403",
+  "E501",
+]
+lint.select = ["E", "F", "I", "W"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["kramabench", "benchmark", "systems"]

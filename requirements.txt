@@ -1,0 +1,62 @@
+# Core data/runtime dependencies
+pandas>=2.2.3
+numpy>=2.0
+scipy
+scikit-learn
+openpyxl
+pyyaml>=6.0
+requests>=2.32.0
+python-dotenv>=1.0.0
+rich>=13.9.0
+typeguard>=4.0.0
+pillow>=10.0.0
+jinja2>=3.1.0
+
+# LLM/API clients
+openai>=1.72.0
+anthropic
+litellm
+ollama
+together
+
+# Agent execution
+docker
+gymnasium
+tiktoken
+
+# Local scorer models
+transformers
+accelerate
+huggingface-hub>=0.29.0
+
+# KramaBench / evaluation utilities
+rouge-score>=0.1.0
+beautifulsoup4>=4.12.0
+wikipedia-api>=0.6.0
+youtube-transcript-api>=0.6.0
+jsonlines
+json5
+fuzzywuzzy
+python-Levenshtein
+
+# Data science packages used by benchmark tasks
+matplotlib
+statsmodels
+geopandas
+geopy
+pytz
+python-dateutil
+skyfield
+pyatmos
+cdflib
+astropy
+timezonefinder
+duckdb
+tabulate
+seaborn
+plotly
+xgboost
+lightgbm
+db-dtypes
+google-cloud-bigquery
+snowflake-connector-python
