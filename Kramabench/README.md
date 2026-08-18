@@ -13,6 +13,8 @@ fixes, and evaluator updates for very small scientific-notation answers.
 See [Kramabench_modification_summary.md](Kramabench_modification_summary.md)
 for the full list of changes and rationales.
 
+The corrections are based on the cleaning work of [@SunnyXia3579](https://github.com/SunnyXia3579) — special thanks for the contribution.
+
 ### Systems leaderboard
 Overall evaluation results by domain for KramaBench:
 

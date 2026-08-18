@@ -157,7 +157,7 @@ cost_metrics_events.jsonl
 
 ## Benchmark Corrections
 
-This release includes benchmark-level clarifications and corrections used in our experiments: task wording clarifications, reference-solution fixes, and evaluator updates for very small scientific-notation answers. See `Kramabench/Kramabench_modification_summary.md` for the full list and rationale.
+This release includes benchmark-level clarifications and corrections used in our experiments: task wording clarifications, reference-solution fixes, and evaluator updates for very small scientific-notation answers. See `Kramabench/Kramabench_modification_summary.md` for the full list and rationale. The corrections are based on the cleaning work by [@SunnyXia3579](https://github.com/SunnyXia3579) - thanks for the contribution.
 
 ## Reproducibility Notes
 
