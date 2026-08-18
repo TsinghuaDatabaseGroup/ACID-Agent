@@ -1,3 +1,15 @@
+"""Post-process Config Module - output post-processing helpers for DA-Agent tasks.
+
+This module provides post-processing utilities:
+- Detects generated plotting scripts and image files
+- Replays plotting code to extract structured plot information
+- Stores plot metadata for downstream evaluation
+- Provides optional task-specific result cleanup hooks
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/configs/post_process.py
+"""
+
 # import operator
 import numpy as np
 import re
@@ -125,4 +137,3 @@ def plot_process(mnt_dir: str,controller: Type[PythonController]):
         return ['', ''], error
 
     return [plot_json, npy_path], ''
-

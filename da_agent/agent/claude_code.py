@@ -1,3 +1,13 @@
+"""Claude Code Baseline Module - CLI wrapper for benchmark execution.
+
+This module adapts the DA-Agent benchmark wrapper pattern to Claude Code:
+- Starts a Docker-backed task environment
+- Invokes the Claude Code CLI on each benchmark task
+- Captures trajectory, raw CLI events, final answer, and cost metrics
+
+Reference: https://github.com/AgenticDataBench/AgenticDataBench/tree/main/testbed/da_agent/agent
+"""
+
 import json
 import logging
 import os

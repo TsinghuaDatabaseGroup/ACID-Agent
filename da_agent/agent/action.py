@@ -1,4 +1,15 @@
 #coding=utf8
+"""Action Module - action definitions and parsers for the data analysis agent.
+
+This module defines the executable action interface used by the agent:
+- Represents Bash, Python, SQL, file, and termination actions
+- Parses model responses into structured action objects
+- Provides action-space descriptions for prompt construction
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/agent/action.py
+"""
+
 import re
 from dataclasses import dataclass, field
 from typing import Optional, Any, Union, List, Dict

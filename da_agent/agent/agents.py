@@ -1,6 +1,14 @@
-# Adapted from AgenticDataBench's DA-Agent PromptAgent implementation:
-# https://github.com/AgenticDataBench/AgenticDataBench/blob/main/testbed/da_agent/agent/agents.py
-# Local changes add KramaBench integration plus cost-metric and trace bookkeeping.
+"""PromptAgent Module - DA-Agent-style baseline agent wrapper.
+
+This module implements a prompt-driven data analysis agent:
+- Builds task prompts and action-space instructions
+- Calls an LLM to produce one action per step
+- Executes actions in the Docker-backed data-analysis environment
+- Records trajectory, final answer, and cost metrics for benchmark runs
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/agent/agents.py
+"""
 
 import base64
 import json

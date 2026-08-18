@@ -1,3 +1,15 @@
+"""Setup Controller Module - workspace setup utilities for agent containers.
+
+This module prepares task files inside the Docker workspace:
+- Copies task-specific files into the mounted workspace
+- Downloads or copies setup artifacts when configured
+- Runs setup commands before task execution
+- Provides extension points for custom setup functions
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/controllers/setup.py
+"""
+
 import json
 import os
 

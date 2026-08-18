@@ -1,3 +1,14 @@
+"""Prompt Templates Module - prompts for DA-Agent-style data analysis agents.
+
+This module provides prompt templates used by the agent:
+- Defines the base data-analysis system prompt and action format
+- Provides ACID-Agent extensions for exploration, review, and retry
+- Encodes task-facing instructions for step-by-step data analysis
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/agent/prompts.py
+"""
+
 SYS_PROMPT_IN_OUR_CODE = """# CONTEXT #
 You are a data scientist proficient in analyzing data. You excel at using Bash commands and Python code to solve data-related problems. You are working in a Bash environment with all necessary Python libraries installed. If you need to install additional libraries, you can use the 'pip install' command. You are starting in the {work_dir} directory, which contains all the data needed for your tasks. You can only use the actions provided in the ACTION SPACE to solve the task. The maximum number of steps you can take is {max_steps}.
 

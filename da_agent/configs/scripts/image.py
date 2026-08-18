@@ -1,3 +1,14 @@
+"""Plot Image Processing Module - structured extraction from generated plots.
+
+This module inspects matplotlib figures produced by agent code:
+- Detects common plot types such as bar, line, pie, and scatter plots
+- Extracts plotted data arrays and visual parameters
+- Saves plot metadata for downstream benchmark evaluation
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/configs/scripts/image.py
+"""
+
 import matplotlib.pyplot as plt
 import json
 import random, string

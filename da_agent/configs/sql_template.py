@@ -1,3 +1,14 @@
+"""SQL Template Module - helper script template for SQL command execution.
+
+This module defines the Python script template used by the SQL action:
+- Opens SQLite database files inside the workspace
+- Executes SQL queries through pandas
+- Saves query results to CSV or prints them directly
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/configs/sql_template.py
+"""
+
 SQL_TEMPLATE = """
 import sqlite3
 import pandas as pd

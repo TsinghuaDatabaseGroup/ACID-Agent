@@ -1,3 +1,15 @@
+"""Environment Utilities Module - helper functions for agent workspaces.
+
+This module provides shared environment utilities:
+- Validates common data files used in benchmark tasks
+- Provides timeout handling for long-running operations
+- Creates and clears workspace directories
+- Computes file hashes for change tracking
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/envs/utils.py
+"""
+
 import signal
 import os
 import hashlib
@@ -82,5 +94,4 @@ def calculate_sha256(file_path):
     with open(file_path, 'rb') as f:
         file_data = f.read()
         return hashlib.sha256(file_data).hexdigest()
-
 

@@ -1,3 +1,15 @@
+"""DA_Agent_Env Module - Docker environment manager for the data analysis agent.
+
+This module manages the execution environment:
+- Creates and manages Docker containers
+- Handles action execution for Bash, Python, SQL, and termination actions
+- Sets up the workspace with task-specific data files
+- Tracks file changes and execution metadata for benchmark evaluation
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/envs/da_agent.py
+"""
+
 import logging
 import os
 import subprocess

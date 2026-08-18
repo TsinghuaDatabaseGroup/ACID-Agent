@@ -1,3 +1,16 @@
+"""Codex Baseline Module - CLI wrapper for benchmark execution.
+
+This module adapts the DA-Agent benchmark wrapper pattern to Codex:
+- Starts a Docker-backed task environment
+- Generates Codex CLI configuration for an OpenAI-compatible provider
+- Invokes `codex exec` on each benchmark task
+- Parses Codex JSONL events into a normalized trajectory
+- Captures final answer, execution metadata, and cost metrics
+
+References:
+- https://github.com/AgenticDataBench/AgenticDataBench/blob/main/testbed/da_agent/agent/codex.py
+"""
+
 import json
 import logging
 import os

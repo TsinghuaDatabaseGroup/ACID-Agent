@@ -1,4 +1,16 @@
 #coding=utf8
+"""General Setup Config Module - reusable setup helpers for DA-Agent tasks.
+
+This module defines common setup functions:
+- Downloads scripts or archives for task initialization
+- Copies files and directories into the task workspace
+- Executes setup commands inside the agent environment
+- Normalizes workspace permissions for task execution
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/configs/general.py
+"""
+
 from typing import Dict, List
 from typing import Any, Union, Optional
 import shutil

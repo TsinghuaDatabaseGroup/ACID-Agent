@@ -1,3 +1,15 @@
+"""Python Controller Module - command executor inside the agent container.
+
+This module manages code execution in the Docker workspace:
+- Runs Bash, Python, and SQL commands inside the container
+- Creates and reads files in the mounted workspace
+- Captures stdout, stderr, exit code, and execution metadata
+- Applies small execution safeguards for benchmark tasks
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/controllers/python.py
+"""
+
 import json
 import logging
 import random

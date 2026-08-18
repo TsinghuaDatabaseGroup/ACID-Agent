@@ -1,4 +1,16 @@
 #coding=utf8
+"""BigQuery Setup Config Module - BigQuery initialization helpers.
+
+This module provides optional BigQuery setup utilities:
+- Loads GCP project credentials from configuration
+- Initializes BigQuery clients for benchmark environments
+- Clears configured BigQuery project resources when requested
+- Dispatches BigQuery setup actions used by task configs
+
+References:
+- https://github.com/yiyihum/da-code/tree/main/da_agent/configs/bigquery.py
+"""
+
 import json, logging, platform
 from google.cloud import bigquery
 from google.oauth2 import service_account
